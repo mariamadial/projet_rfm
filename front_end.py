@@ -409,9 +409,3 @@ elif page == "Dashboard":
     st.dataframe(top_sellers)
     st.subheader("🏠 Codes Postaux avec les Pires Scores Moyens")
     st.dataframe(worst_zip_codes)
-else:
-<<<<<<< HEAD
-    st.write("Page inconnue ou aucun contenu disponible.")
-=======
-    st.write("Page inconnue ou aucun contenu disponible.")
->>>>>>> dcb7014 (first commit)
