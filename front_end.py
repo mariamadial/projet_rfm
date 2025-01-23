@@ -8,12 +8,10 @@ import altair as alt
 # Configurer la page principale
 st.set_page_config(page_title="Customer Analytics Platform", layout="wide")
 # Définir les paramètres par défaut dans l'URL si absents
-if "page" not in st.experimental_get_query_params():
-    st.experimental_set_query_params(page="Home")
-
-# Récupérer la page actuelle
-page = st.experimental_get_query_params().get("page", ["Home"])[0]
-
+page = st.radio(
+        "Choisissez une page :",
+    ["Home","RFM Segmentation", "Dashboard"]
+)
 # Navigation via boutons
 selected_page = st.container()
 with selected_page:
