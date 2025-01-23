@@ -61,13 +61,7 @@ with selected_page:
             text-align: center;
         }
         </style>
-        <div class="nav-bar">
-            <form action="/" method="GET">
-                <button name="page" value="Home">Accueil</button>
-                <button name="page" value="RFM Segmentation">RFM Segmentation</button>
-                <button name="page" value="Dashboard">Dashboard Expérience Client</button>
-            </form>
-        </div>
+        
     """, unsafe_allow_html=True)
 
 # Déterminer la page sélectionnée
